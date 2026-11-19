@@ -1,0 +1,22 @@
+package com.skyllx.firstwebapplication.controllers;
+
+import com.skyllx.firstwebapplication.controller.LoginController;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class LoginControllers {
+    private static final Logger logger = LoggerFactory.getLogger(LoginControllers.class);
+@RequestMapping("/logins")
+    public String logins()
+    {
+
+
+        return "logins";
+
+    }
+}
